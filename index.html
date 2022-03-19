@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="shortcut icon"
+      href="/public/assets/images/profile_avatar.jpg"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Roboto', 'sans-serif'],
+            },
+            colors: {
+              dark: '#0D1117',
+              light: '#F3F2EF',
+            },
+          },
+        },
+      };
+    </script>
+    <title>Portfólio - Denis Medeiros</title>
+  </head>
+  <body class="flex flex-col h-full bg-light dark:bg-dark">
+    <main class="flex flex-col min-h-screen px-8 py-10 gap-5">
+      <section class="py-10">
+        <figure class="flex flex-col items-center">
+          <img
+            src="/public/assets/images/profile_avatar.jpg"
+            alt="Foto de perfil do Denis Medeiros"
+            class="w-40 h-40 rounded-full"
+          />
+          <figcaption
+            class="pt-4 text-black dark:text-white font-bold text-2xl"
+          >
+            Denis Medeiros
+          </figcaption>
+        </figure>
+
+        <div class="flex justify-center gap-4 mt-4">
+          <a
+            href="https://github.com/DenisMedeirosSDK"
+            class="rounded-full w-10 h-10 bg-white flex justify-center items-center"
+          >
+            <img src="/public/assets/icons/github.svg" alt="" srcset="" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/denis-medeiros/"
+            class="rounded-full w-10 h-10 bg-white flex justify-center items-center"
+          >
+            <img src="/public/assets/icons/linkedin.svg" alt="" srcset="" />
+          </a>
+        </div>
+      </section>
+      <section>
+        <article>
+          <h1 class="text-4xl text-black dark:text-white font-bold">Sobre</h1>
+          <p class="text-black dark:text-white text-justify py-2 text-base">
+            Sou <b>Denis Medeiros</b>, desenvolvedor Full-Stack javascript com
+            foco em Node.js, formado em Ciência da Computação, e um entusiasta
+            em modelagem 3D.
+          </p>
+        </article>
+      </section>
+      <section>
+        <article>
+          <h1 class="text-4xl text-black dark:text-white font-bold">Techs</h1>
+          <div class="grid gap-3 grid-cols-2 md:grid-cols-4 py-2">
+            <figure class="md:flex">
+              <img
+                class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
+                src="/public/assets/icons/nodejs.svg"
+                alt="Nodejs Logo - Heptágono com o JS escrito no meio"
+                width="384"
+                height="512"
+              />
+            </figure>
+            <figure class="md:flex">
+              <img
+                class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
+                src="/public/assets/icons/react.svg"
+                alt="React Logo - Forma de reação"
+                width="384"
+                height="512"
+              />
+            </figure>
+            <figure class="md:flex">
+              <img
+                class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
+                src="/public/assets/icons/javascript.svg"
+                alt="Javascript Logo - Formato de quadrado com o JS escrito no meio"
+                width="384"
+                height="512"
+              />
+            </figure>
+            <figure class="md:flex">
+              <img
+                class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
+                src="/public/assets/icons/typescript.svg"
+                alt="Typescript Logo - Formato de quadrado com o TS escrito no meio"
+                width="384"
+                height="512"
+              />
+            </figure>
+          </div>
+        </article>
+      </section>
+      <section class="">
+        <h1 class="text-4xl text-black dark:text-white font-bold">Contato</h1>
+        <form
+          action="https://formsubmit.co/contato.denismedeiros@hotmail.com"
+          method="POST"
+          class="flex flex-col items-center gap-2 py-2"
+        >
+          <input
+            type="text"
+            name="name"
+            placeholder="Nome"
+            class="w-full h-12 rounded-md px-2 dark:bg-slate-700 dark:text-light dark:placeholder-slate-400"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="E-mail"
+            class="w-full h-12 rounded-md px-2 dark:bg-slate-700 dark:text-light dark:placeholder-slate-400"
+          />
+          <input
+            type="text"
+            name="subject"
+            placeholder="Assunto"
+            class="w-full h-12 rounded-md px-2 dark:bg-slate-700 dark:text-light dark:placeholder-slate-400"
+          />
+          <textarea
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="Menssagem"
+            class="w-full h-28 rounded-md px-2 py-2 dark:bg-slate-700 dark:text-light dark:placeholder-slate-400"
+          ></textarea>
+          <button
+            type="submit"
+            class="w-full h-12 rounded-md bg-dark dark:bg-slate-800 transition duration-150 ease-out hover:opacity-90 text-white dark:text-light text-xl"
+          >
+            Enviar
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer
+      class="flex flex-shrink-0 flex-col items-center bg-white dark:bg-dark py-10 px-10"
+    >
+      <p class="text-sm dark:text-white">
+        Copyright © 2022 Denis Medeiros - Todos direitos reservados
+      </p>
+    </footer>
+  </body>
+
+  <script>
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if (
+      localStorage.theme === 'dark' ||
+      (!('theme' in localStorage) &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+
+    // Whenever the user explicitly chooses light mode
+    localStorage.theme = 'light';
+
+    // Whenever the user explicitly chooses dark mode
+    localStorage.theme = 'dark';
+
+    // Whenever the user explicitly chooses to respect the OS preference
+    localStorage.removeItem('theme');
+  </script>
+</html>
