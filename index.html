@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Portfólio, Denis Medeiros" />
     <link
       rel="shortcut icon"
       href="public/assets/images/profile_avatar.jpg"
@@ -35,13 +36,15 @@
     <title>Portfólio - Denis Medeiros</title>
   </head>
   <body class="flex flex-col h-full bg-light dark:bg-dark">
-    <main class="flex flex-col min-h-screen px-8 py-10 gap-5">
+    <main
+      class="flex flex-col min-h-screen px-8 py-10 gap-5 lg:max-w-screen-lg lg:mx-auto"
+    >
       <section class="py-10">
         <figure class="flex flex-col items-center">
           <img
-            src="public/assets/images/profile_avatar.jpg"
+            src="public/assets/images/profile_avatar.webp"
             alt="Foto de perfil do Denis Medeiros"
-            class="w-40 h-40 rounded-full"
+            class="w-52 h-52 rounded-full"
           />
           <figcaption
             class="pt-4 text-black dark:text-white font-bold text-2xl"
@@ -55,75 +58,188 @@
             href="https://github.com/DenisMedeirosSDK"
             class="rounded-full w-10 h-10 bg-white flex justify-center items-center"
           >
-            <img src="public/assets/icons/github.svg" alt="" srcset="" />
+            <img
+              src="public/assets/icons/github.svg"
+              width="24px"
+              height="24px"
+              alt="Github Logo - Forma circular com um gato levantado a pata no centro"
+              srcset=""
+            />
           </a>
           <a
             href="https://www.linkedin.com/in/denis-medeiros/"
             class="rounded-full w-10 h-10 bg-white flex justify-center items-center"
           >
-            <img src="public/assets/icons/linkedin.svg" alt="" srcset="" />
+            <img
+              src="public/assets/icons/linkedin.svg"
+              width="24px"
+              height="24px"
+              alt="Linkedin Logo - Forma circular com um i & n no centro"
+              srcset=""
+            />
           </a>
         </div>
       </section>
       <section>
         <article>
           <h1 class="text-4xl text-black dark:text-white font-bold">Sobre</h1>
-          <p class="text-black dark:text-white text-justify py-2 text-base">
+          <p
+            class="text-black dark:text-white text-justify md:text-left py-2 text-base"
+          >
             Sou <b>Denis Medeiros</b>, desenvolvedor Full-Stack javascript com
             foco em Node.js, formado em Ciência da Computação, e um entusiasta
             em modelagem 3D.
           </p>
         </article>
       </section>
-      <section>
+      <section class="lg:my-10">
         <article>
           <h1 class="text-4xl text-black dark:text-white font-bold">Techs</h1>
-          <div class="grid gap-3 grid-cols-2 md:grid-cols-4 py-2">
-            <figure class="md:flex">
+          <div
+            class="grid gap-3 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 py-2 lg:py-5"
+          >
+            <figure class="flex flex-col">
               <img
-                class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
+                class="w-24 h-24 md:w-48 md:h-auto md:rounded-none mx-auto"
                 src="public/assets/icons/nodejs.svg"
-                alt="Nodejs Logo - Heptágono com o JS escrito no meio"
+                alt="Nodejs Logo - Formato de heptágono com o JS escrito no meio"
                 width="384"
                 height="512"
               />
+              <figcaption
+                class="text-sm font-medium text-black dark:text-white text-center"
+              >
+                Node.js
+              </figcaption>
             </figure>
-            <figure class="md:flex">
+            <figure class="flex flex-col">
               <img
-                class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
+                class="w-24 h-24 md:w-48 md:h-auto md:rounded-none mx-auto"
                 src="public/assets/icons/react.svg"
                 alt="React Logo - Forma de reação"
                 width="384"
                 height="512"
               />
+              <figcaption
+                class="text-sm font-medium text-black dark:text-white text-center"
+              >
+                ReactJs
+              </figcaption>
             </figure>
-            <figure class="md:flex">
+            <figure class="flex flex-col">
               <img
-                class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
+                class="w-24 h-24 md:w-48 md:h-auto md:rounded-none mx-auto"
                 src="public/assets/icons/javascript.svg"
                 alt="Javascript Logo - Formato de quadrado com o JS escrito no meio"
                 width="384"
                 height="512"
               />
+              <figcaption
+                class="text-sm font-medium text-black dark:text-white text-center"
+              >
+                JavaScript
+              </figcaption>
             </figure>
-            <figure class="md:flex">
+            <figure class="flex flex-col">
               <img
-                class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
+                class="w-24 h-24 md:w-48 md:h-auto md:rounded-none mx-auto"
                 src="public/assets/icons/typescript.svg"
                 alt="Typescript Logo - Formato de quadrado com o TS escrito no meio"
                 width="384"
                 height="512"
               />
+              <figcaption
+                class="text-sm font-medium text-black dark:text-white text-center"
+              >
+                TypeScript
+              </figcaption>
+            </figure>
+            <figure class="flex flex-col">
+              <img
+                class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
+                src="public/assets/icons/docker.svg"
+                alt="Docker Logo - Formato de circular com uma baleia carregando container em cima dela e abaixo escrito docker"
+                width="384"
+                height="512"
+              />
+              <figcaption
+                class="text-sm font-medium text-black dark:text-white text-center"
+              >
+                Docker
+              </figcaption>
             </figure>
           </div>
         </article>
       </section>
-      <section class="">
+      <section>
+        <h1 class="text-4xl text-black dark:text-white font-bold">Projetos</h1>
+
+        <div class="grid gap-5 grid-cols-1 py-5 lg:grid-cols-3">
+          <div>
+            <h2 class="text-2xl font-semibold dark:text-white">Unip-e</h2>
+            <p
+              class="text-justify mb-2 dark:text-white md:text-left lg:text-justify"
+            >
+              Unip-e foi um projeto para o curso de Ciência da Computação, no
+              qual o aluno deve preencher um formulário para gerar um relatório
+              de estágio, antes os alunos tinham que preencher a mão em um
+              papel, agora o relatório pode ser feito de qualquer lugar.
+            </p>
+            <a class="text-blue-700" href="https://unip-e.vercel.app/"
+              >Link para o site</a
+            >
+          </div>
+          <div>
+            <h2 class="text-2xl font-semibold dark:text-white">Nebulosa</h2>
+            <p
+              class="text-justify mb-2 dark:text-white md:text-left lg:text-justify"
+            >
+              Nebulosa é um projeto para TCC, um sistema de agendamento para
+              pessoas autonomas no ramo de beleza.
+            </p>
+            <a
+              class="text-blue-700"
+              href="https://github.com/DenisMedeirosSDK/Nebulosa-Backend"
+              >Link para o repositório</a
+            >
+          </div>
+          <div>
+            <h2 class="text-2xl font-semibold dark:text-white">Treefall</h2>
+            <p
+              class="text-justify mb-2 dark:text-white md:text-left lg:text-justify"
+            >
+              Treefall é um sistema localizador de desastres naturais, o usuário
+              que estiver conectado pode adicionar um ponto de desastre, e
+              outros usuários podem ver os pontos de desastre cadastrados.
+            </p>
+            <a
+              class="text-blue-700"
+              href="https://github.com/DenisMedeirosSDK/TreeFall-Backend"
+              >Link para o repositório</a
+            >
+          </div>
+          <div>
+            <h2 class="text-2xl font-semibold dark:text-white">igNews</h2>
+            <p
+              class="text-justify mb-2 dark:text-white md:text-left lg:text-justify"
+            >
+              Ig.News é um blog de noticias, integrado ao PrismicCMS versão 6 e
+              Stripe para pagamento de recorencia.
+            </p>
+            <a
+              class="text-blue-700"
+              href="https://github.com/DenisMedeirosSDK/ignews"
+              >Link para o repositório</a
+            >
+          </div>
+        </div>
+      </section>
+      <section>
         <h1 class="text-4xl text-black dark:text-white font-bold">Contato</h1>
         <form
           action="https://formsubmit.co/contato.denismedeiros@hotmail.com"
           method="POST"
-          class="flex flex-col items-center gap-2 py-2"
+          class="flex flex-col gap-2 py-2"
         >
           <input
             type="text"
@@ -160,7 +276,7 @@
       </section>
     </main>
     <footer
-      class="flex flex-shrink-0 flex-col items-center bg-white dark:bg-dark py-10 px-10"
+      class="flex w-full flex-col items-center bg-white dark:bg-slate-800 py-10 px-10"
     >
       <p class="text-sm dark:text-white">
         Copyright © 2022 Denis Medeiros - Todos direitos reservados
