@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="dark">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -36,6 +36,13 @@
     <title>Portfólio - Denis Medeiros</title>
   </head>
   <body class="flex flex-col h-full bg-light dark:bg-dark">
+    <header>
+      <nav class="flex flex-1 px-8 pt-5">
+        <button onclick="handleToggleDarkMode()" class="ml-auto">
+          <img src="public/assets/icons/moon.svg" alt="Moon" />
+        </button>
+      </nav>
+    </header>
     <main
       class="flex flex-col min-h-screen px-8 py-10 gap-5 lg:max-w-screen-lg lg:mx-auto"
     >
@@ -285,6 +292,12 @@
   </body>
 
   <script>
+    function handleToggleDarkMode() {
+      document.documentElement.classList.contains('dark')
+        ? document.documentElement.classList.remove('dark')
+        : document.documentElement.classList.add('dark');
+    }
+
     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
     if (
       localStorage.theme === 'dark' ||
